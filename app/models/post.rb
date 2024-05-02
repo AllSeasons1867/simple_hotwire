@@ -1,2 +1,4 @@
 class Post < ApplicationRecord
-end
+    broadcasts_to -> (post) { :posts }
+  end
+  
